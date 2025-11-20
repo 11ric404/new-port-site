@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Cursor from './components/UI/Cursor';
 import InteractiveBackground from './components/UI/InteractiveBackground';
 import Navbar from './components/Layout/Navbar';

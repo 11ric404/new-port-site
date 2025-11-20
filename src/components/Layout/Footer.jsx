@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="copyright">
-                    © 2025 Ric Rebull. Systems Engineer.
+                    &copy; {new Date().getFullYear()} Ric Rebull. Systems Engineer. <span style={{ opacity: 0.5, fontSize: '0.8em' }}>v1.1</span>
                 </div>
                 <div className="footer-status">
                     <div className="status-item">
