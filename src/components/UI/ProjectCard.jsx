@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Folder, BarChart2, MessageSquare, Server } from 'lucide-react';
+import { ExternalLink, Folder, BarChart2, MessageSquare, Server, Gamepad2 } from 'lucide-react';
 import './ProjectCard.css';
 
 const ProjectCard = ({ title, type, tags, description, highlights, iconType, date }) => {
@@ -9,6 +9,7 @@ const ProjectCard = ({ title, type, tags, description, highlights, iconType, dat
             case 'chart': return <BarChart2 size={40} color="#00e5ff" />;
             case 'bot': return <MessageSquare size={40} color="#00e5ff" />;
             case 'server': return <Server size={40} color="#00e5ff" />;
+            case 'game': return <Gamepad2 size={40} color="#00e5ff" />;
             default: return <Folder size={40} color="#00e5ff" />;
         }
     };

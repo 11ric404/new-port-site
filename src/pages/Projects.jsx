@@ -42,15 +42,15 @@ const Projects = () => {
             ]
         },
         {
-            title: "Home Networking Infrastructure",
-            date: "Sep 2025",
-            iconType: "server",
-            tags: ["Network Design", "Hardware Implementation", "Switch Configuration", "CAT6 Cabling"],
-            description: "Designed and implemented a complete wired home network infrastructure from the ground up, ensuring high-speed, reliable connectivity throughout the premises.",
+            title: "Space Arcade Shooter",
+            date: "2024",
+            iconType: "game",
+            tags: ["Python", "Pygame", "OOP", "Game Physics", "UI/UX Design"],
+            description: "A space-themed arcade shooter game where players defend against waves of asteroid enemies while collecting power-ups and avoiding cosmic hazards. Built with professional game loop architecture and sprite-based rendering.",
             highlights: [
-                "Crimped and tested CAT6 Ethernet cables.",
-                "Configured switches for optimal traffic flow.",
-                "Ensured reliable connectivity across all endpoints."
+                "Wave-based progression with increasing difficulty.",
+                "Dynamic game events including supernovas and black holes.",
+                "Particle systems, physics simulations, and high score persistence."
             ]
         }
     ];
