@@ -41,11 +41,6 @@ const ProjectCard = ({ title, type, tags, description, highlights, iconType, dat
                 ))}
             </ul>
 
-            <div className="project-footer">
-                <button className="view-details-btn">
-                    View Details <ExternalLink size={16} style={{ marginLeft: '8px' }} />
-                </button>
-            </div>
         </div>
     );
 };
