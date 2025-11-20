@@ -22,7 +22,7 @@ const Home = () => {
                     </h2>
 
                     <p className="hero-description">
-                        <strong>Systems Administration</strong>, <strong>Network Infrastructure</strong>, and <strong>Cybersecurity Compliance</strong>.
+                        <strong>Systems Administration</strong>, <strong>Network Infrastructure</strong>, and <strong>Automation</strong>.
                     </p>
 
                     <div className="hero-cta">

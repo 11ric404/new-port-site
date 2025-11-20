@@ -103,7 +103,6 @@ const About = () => {
                             <h4>CYBERSECURITY</h4>
                             <div className="skill-tags">
                                 <span className="skill-tag">RMF Standards</span>
-                                <span className="skill-tag">NIST SP 800-53</span>
                                 <span className="skill-tag">STIG / SCAP</span>
                                 <span className="skill-tag">Purdue Model (OT/ICS)</span>
                                 <span className="skill-tag">Access Controls</span>
