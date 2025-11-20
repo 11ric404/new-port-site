@@ -1,0 +1,24 @@
+.section-header {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #e6f1ff;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-header .highlight {
+    color: var(--accent);
+    /* Or blue #00e5ff */
+    color: #00e5ff;
+}
+
+.header-line {
+    height: 4px;
+    width: 60px;
+    background-color: #00e5ff;
+    border-radius: 2px;
+}

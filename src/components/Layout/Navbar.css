@@ -1,0 +1,85 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(2, 12, 27, 0.6);
+    /* More transparent */
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    font-family: var(--font-mono);
+}
+
+.navbar-logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+}
+
+.logo-symbol {
+    color: var(--accent);
+    margin-right: 5px;
+    background-color: rgba(100, 255, 218, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.logo-divider {
+    margin: 0 10px;
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+.logo-highlight {
+    color: var(--accent);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+    /* Reduced gap to accommodate buttons */
+}
+
+.navbar-links a {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    transition: var(--transition);
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.navbar-links a:hover {
+    color: var(--accent);
+    background-color: rgba(100, 255, 218, 0.05);
+}
+
+/* Active state matching the screenshot: Solid cyan background, dark text */
+.navbar-links a.active {
+    background-color: rgba(2, 62, 74, 0.4);
+    /* Darker cyan/teal background */
+    color: var(--accent);
+    border: 1px solid rgba(100, 255, 218, 0.3);
+}
+
+/* Alternative interpretation of screenshot: The "Projects" button looks like a solid block 
+   Wait, looking closely at "Projects" in the screenshot... 
+   It has a dark background (maybe slightly lighter than nav) and cyan text, 
+   or a cyan background with dark text?
+   
+   Let's look at the screenshot `uploaded_image_0_1763605863020.png`.
+   The "Projects" button has a dark teal/cyan background and cyan text.
+   It looks like `background-color: rgba(0, 229, 255, 0.15)` with `color: #00e5ff`.
+   Let's adjust.
+*/
+
+.navbar-links a.active {
+    background-color: rgba(0, 229, 255, 0.15);
+    color: #00e5ff;
+    border-radius: 4px;
+    font-weight: 500;
+}

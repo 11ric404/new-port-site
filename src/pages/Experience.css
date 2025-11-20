@@ -1,0 +1,12 @@
+.experience-container {
+    padding: 120px 50px 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.timeline-container {
+    margin-top: 40px;
+    padding-left: 20px;
+    /* Offset for visual balance */
+}
