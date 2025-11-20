@@ -42,7 +42,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <a href="#" className="social-btn">
+                    <a href="https://www.linkedin.com/in/ric-rebull-b9200a2a6/" target="_blank" rel="noopener noreferrer" className="social-btn">
                         <Linkedin size={20} /> LinkedIn
                     </a>
                 </div>
