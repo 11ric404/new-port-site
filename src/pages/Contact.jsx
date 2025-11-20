@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Send } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Send } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
@@ -24,16 +24,6 @@ const Contact = () => {
 
                     <div className="info-card">
                         <div className="info-icon">
-                            <Phone size={24} color="#00e5ff" />
-                        </div>
-                        <div className="info-details">
-                            <h3>Phone</h3>
-                            <p>786-300-9501</p>
-                        </div>
-                    </div>
-
-                    <div className="info-card">
-                        <div className="info-icon">
                             <MapPin size={24} color="#00e5ff" />
                         </div>
                         <div className="info-details">
@@ -48,20 +38,47 @@ const Contact = () => {
                 </div>
 
                 <div className="contact-form-wrapper">
-                    <form className="contact-form">
+                    <form
+                        className="contact-form"
+                        action="https://formsubmit.co/RicRebullWork@gmail.com"
+                        method="POST"
+                    >
+                        {/* FormSubmit Configuration */}
+                        <input type="hidden" name="_subject" value="New contact from portfolio website!" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_template" value="table" />
+
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
-                            <input type="text" id="name" placeholder="John Doe" />
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="John Doe"
+                                required
+                            />
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
-                            <input type="email" id="email" placeholder="john@example.com" />
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="john@example.com"
+                                required
+                            />
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="message">Message</label>
-                            <textarea id="message" rows="5" placeholder="Hello! I'd like to discuss..."></textarea>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Hello! I'd like to discuss..."
+                                required
+                            ></textarea>
                         </div>
 
                         <button type="submit" className="submit-btn">

@@ -11,9 +11,12 @@ const TerminalWindow = () => {
     const bottomRef = useRef(null);
 
     const commands = {
-        help: () => 'Available commands: help, clear, email, phone',
+        help: () => 'Available commands: help, clear, email, linkedin',
         email: () => 'RicRebullWork@gmail.com',
-        phone: () => '786-300-9501',
+        linkedin: () => {
+            window.open('https://www.linkedin.com/in/ric-rebull-b9200a2a6/', '_blank');
+            return 'Opening LinkedIn profile...';
+        },
         clear: () => {
             setHistory([]);
             return null;
