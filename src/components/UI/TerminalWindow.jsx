@@ -85,7 +85,6 @@ const TerminalWindow = () => {
                         onChange={(e) => setInput(e.target.value)}
                         onKeyDown={handleKeyDown}
                         className="terminal-input"
-                        autoFocus
                     />
                 </div>
                 <div ref={bottomRef} />

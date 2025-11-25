@@ -13,6 +13,11 @@ const Cursor = () => {
     return () => window.removeEventListener('mousemove', updatePosition);
   }, []);
 
+  // Don't render on touch devices
+  if (typeof navigator !== 'undefined' && (navigator.maxTouchPoints > 0 || window.matchMedia("(pointer: coarse)").matches)) {
+    return null;
+  }
+
   return (
     <div
       className="cursor-dot"
