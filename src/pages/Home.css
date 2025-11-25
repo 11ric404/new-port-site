@@ -208,3 +208,9 @@
         text-align: left;
     }
 }
+
+@media (max-width: 768px) {
+    .hero-visual {
+        display: none;
+    }
+}
