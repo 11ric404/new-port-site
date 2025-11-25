@@ -83,3 +83,48 @@
     border-radius: 4px;
     font-weight: 500;
 }
+
+.mobile-menu-icon {
+    display: none;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        z-index: 101; /* Above the menu overlay */
+    }
+
+    .navbar-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%; /* Or 100% if you want full width */
+        height: 100vh;
+        background-color: rgba(2, 12, 27, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        z-index: 100;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-links.active {
+        right: 0;
+    }
+
+    .navbar-links li {
+        margin: 15px 0;
+    }
+
+    .navbar-links a {
+        font-size: 1.2rem;
+    }
+}

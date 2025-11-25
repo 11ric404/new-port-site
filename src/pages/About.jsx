@@ -78,9 +78,6 @@ const About = () => {
                         <div className="profile-image-container">
                             <img src={profileImg} alt="Ric Rebull" className="profile-image" />
                         </div>
-                        <a href={resumePdf} download="Ric_Rebull_Resume.pdf" className="download-btn">
-                            <Download size={18} style={{ marginRight: '8px' }} /> Download Resume
-                        </a>
                     </div>
 
                     <div className="skills-section">
