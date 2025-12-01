@@ -18,7 +18,7 @@ const About = () => {
                         </p>
                         <br />
                         <p>
-                            Currently holding an <strong>Active Secret Clearance</strong>, I have practical experience ensuring compliance with rigorous DoD standards (STIGs, RMF) while maintaining mission-critical test equipment. I thrive in environments where reliability, security, and technical precision are paramount.
+                            I have practical experience ensuring compliance with rigorous DoD standards (STIGs, RMF) while maintaining mission-critical test equipment. I thrive in environments where reliability, security, and technical precision are paramount.
                         </p>
                         <br />
                         <p>

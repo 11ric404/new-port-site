@@ -40,8 +40,8 @@ const Home = () => {
                                 <ShieldCheck size={24} color="#64ffda" />
                             </div>
                             <div className="feature-text">
-                                <h3>U.S. Secret Clearance</h3>
-                                <p>Active US Secret Clearance. RMF & NIST standards.</p>
+                                <h3>Security Compliance</h3>
+                                <p>RMF & NIST standards, System Hardening.</p>
                             </div>
                         </div>
                         <div className="feature-item">
