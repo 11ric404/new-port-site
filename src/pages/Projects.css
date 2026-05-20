@@ -12,12 +12,12 @@
 
 .projects-header-center h2 {
     font-size: 3rem;
-    color: #e6f1ff;
+    color: var(--text-primary);
     margin-bottom: 15px;
 }
 
 .projects-header-center .highlight {
-    color: #00e5ff;
+    color: var(--accent);
 }
 
 .projects-header-center p {

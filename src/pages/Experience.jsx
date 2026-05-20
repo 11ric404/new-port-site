@@ -8,25 +8,24 @@ const Experience = () => {
         {
             title: "Information Systems Engineer Intern",
             company: "Raytheon",
-            date: "May 2025 - Aug 2025",
-            location: "Andover, Massachusetts",
+            date: "05/2025 - 08/2025",
+            location: "Andover, MA",
             description: [
-                "Administered and supported a fleet of test systems, including account management, server maintenance, and OS troubleshooting.",
-                "Enforced cybersecurity and access controls through Active Directory and Group Policy to meet RMF standards.",
-                "Configured Linux environments on required systems following standard hardening procedures.",
-                "Collaborated with cross-functional teams to ensure secure and reliable IT infrastructure for test data integrity.",
-                "Provided infrastructure and endpoint support, assisting with patching, backups, and application upgrades."
+                "Administered and supported a large fleet of test systems, including account management, server maintenance, OS troubleshooting, and joining systems to the domain.",
+                "Enforced cybersecurity and access controls through Active Directory, Group Policy, and hardening (STIG / SCAP) to meet RMF standards outlined in NIST SP 800-53.",
+                "Installed and configured Enterprise Linux on required systems following DoD STIGs, ensuring compliance with hardening/RMF standards.",
+                "Collaborated with cross-functional teams to ensure secure, compliant, and reliable IT infrastructure for test data integrity and mission-critical test equipment.",
+                "Provided infrastructure and endpoint support through RDP and Microsoft 365 tools, assisting with patching, backups, application upgrades, and field test readiness."
             ]
         },
         {
-            title: "Volunteer: Food Donation",
-            company: "Iglesia Adventista Los Peregrinos",
-            date: "Feb 2019 - Mar 2022",
-            location: "Miami, Florida",
+            title: "Founding Father & Information Technology Chair",
+            company: "Beta Theta Pi UCF",
+            date: "10/2023 - Current",
+            location: "Orlando, FL",
             description: [
-                "Led group discussions and activities to meet different community needs.",
-                "Handed out food to the less fortunate, feeding 800 families.",
-                "Organized the flow of traffic for food donation events, improving critical thinking and logistics management."
+                "Served as a Founding Father of the UCF chapter, contributing to the establishment of organizational structure, bylaws, and operational standards from the ground up.",
+                "Provided one-on-one and group tutoring to fraternity members in IT and computer science coursework, reinforcing technical fundamentals across networking, programming, and systems concepts."
             ]
         }
     ];

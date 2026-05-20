@@ -9,8 +9,13 @@ const Home = () => {
         <div className="home-container page-transition">
             <section className="hero-section">
                 <div className="hero-content">
-                    <div className="status-badge">
-                        <span className="status-dot"></span> Available for Opportunities
+                    <div className="status-badges-container">
+                        <span className="status-badge clearance-badge">
+                            <ShieldCheck size={14} className="badge-icon" /> U.S. Secret Clearance
+                        </span>
+                        <span className="status-badge cert-badge">
+                            CompTIA Security+ (IAT Level II)
+                        </span>
                     </div>
 
                     <h1 className="hero-title">
@@ -18,11 +23,11 @@ const Home = () => {
                     </h1>
 
                     <h2 className="hero-subtitle">
-                        Information Technology Student specializing in
+                        Information Systems Engineer
                     </h2>
 
                     <p className="hero-description">
-                        <strong>Systems Administration</strong>, <strong>Network Infrastructure</strong>, and <strong>Automation</strong>.
+                        UCF Information Technology graduate specializing in <strong>Systems Administration</strong>, <strong>Network Infrastructure</strong>, and <strong>Cybersecurity Compliance</strong>. Experienced in DoD environments with active Secret Clearance.
                     </p>
 
                     <div className="hero-cta">
@@ -37,29 +42,29 @@ const Home = () => {
                     <div className="hero-features">
                         <div className="feature-item">
                             <div className="feature-icon">
-                                <ShieldCheck size={24} color="#64ffda" />
+                                <ShieldCheck size={24} color="var(--accent)" />
                             </div>
                             <div className="feature-text">
-                                <h3>Security Compliance</h3>
-                                <p>RMF & NIST standards, System Hardening.</p>
+                                <h3>Security & RMF</h3>
+                                <p>NIST SP 800-53, STIG/SCAP hardening, access controls.</p>
                             </div>
                         </div>
                         <div className="feature-item">
                             <div className="feature-icon">
-                                <Terminal size={24} color="#64ffda" />
+                                <Terminal size={24} color="var(--accent)" />
                             </div>
                             <div className="feature-text">
-                                <h3>System Admin</h3>
-                                <p>RHEL, Windows Server, Active Directory.</p>
+                                <h3>Systems Engineering</h3>
+                                <p>RHEL, Windows Server, Active Directory, GPOs.</p>
                             </div>
                         </div>
                         <div className="feature-item">
                             <div className="feature-icon">
-                                <Server size={24} color="#64ffda" />
+                                <Server size={24} color="var(--accent)" />
                             </div>
                             <div className="feature-text">
-                                <h3>Infrastructure</h3>
-                                <p>Network architecture, hardware deployment.</p>
+                                <h3>Network Ops</h3>
+                                <p>Multi-VLAN architectures, routing, DHCP, and virtualization.</p>
                             </div>
                         </div>
                     </div>

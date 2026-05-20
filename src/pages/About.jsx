@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, GraduationCap, Users } from 'lucide-react';
+import { Download, GraduationCap, Users, ShieldCheck, Award } from 'lucide-react';
 import SectionHeader from '../components/UI/SectionHeader';
 import profileImg from '../assets/profile.png';
 import resumePdf from '../assets/resume.pdf';
@@ -14,15 +14,15 @@ const About = () => {
 
                     <div className="bio-text">
                         <p>
-                            I am an Information Technology student at the <strong>University of Central Florida</strong> with a passion for secure infrastructure and systems engineering. My experience spans from hands-on network implementation to enterprise-level system administration in defense sectors.
+                            I am a secure systems specialist and recent graduate with a Bachelor of Science in Information Technology from the <strong>University of Central Florida</strong>. My core expertise is in implementing secure infrastructure, network system deployment, and regulatory compliance.
                         </p>
                         <br />
                         <p>
-                            I have practical experience ensuring compliance with rigorous DoD standards (STIGs, RMF) while maintaining mission-critical test equipment. I thrive in environments where reliability, security, and technical precision are paramount.
+                            I have hands-on experience hardening operating systems to meet strict DoD RMF standards (NIST SP 800-53, STIGs) from my engineering internship in defense sectors. I enjoy designing reliable architecture that balances robust security protocols with operational efficiency.
                         </p>
                         <br />
                         <p>
-                            Beyond the terminal, I am a leader in my community, having co-founded a fraternity chapter and organized large-scale philanthropy events. I believe in using technology to build stronger, more secure, and more connected systems.
+                            Beyond technical engineering, I serve as a leader in my collegiate and professional community. As a co-founder and the IT Chair of my fraternity chapter, I managed digital infrastructure and mentored fellow students in complex technical concepts.
                         </p>
                     </div>
 
@@ -31,13 +31,27 @@ const About = () => {
                         <div className="education-card">
                             <div className="edu-header">
                                 <h4>University of Central Florida</h4>
-                                <span className="edu-date">Expected May 2026</span>
+                                <span className="edu-date">Completed 2026</span>
                             </div>
-                            <p className="edu-degree">Bachelor of Science, Information Technology</p>
+                            <p className="edu-degree">Bachelor of Science in Information Technology</p>
                             <div className="edu-badges">
                                 <span className="edu-badge">3.81 GPA</span>
                                 <span className="edu-badge">2x President's Honor Roll</span>
                                 <span className="edu-badge">4x Dean's List</span>
+                            </div>
+                            <div className="edu-coursework">
+                                <h5>Key Coursework</h5>
+                                <div className="course-tags">
+                                    <span>Intro to Malware Analysis</span>
+                                    <span>Topics in Cybersecurity</span>
+                                    <span>Security in Computing</span>
+                                    <span>Computer Network Concepts</span>
+                                    <span>Design & Implementation of Computer Networks</span>
+                                    <span>System Administration & Maintenance</span>
+                                    <span>Enterprise Computing</span>
+                                    <span>Operating System Concepts</span>
+                                    <span>Computer Architecture Concepts</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -47,27 +61,13 @@ const About = () => {
 
                         <div className="leadership-item">
                             <div className="leadership-header">
-                                <h4>Founding Father</h4>
-                                <span className="leadership-date">Oct 2023 - Current</span>
+                                <h4>Founding Father & Information Technology Chair</h4>
+                                <span className="leadership-date">10/2023 - Current</span>
                             </div>
-                            <p className="leadership-org">Beta Theta Pi UCF</p>
+                            <p className="leadership-org">Beta Theta Pi UCF – Orlando, FL</p>
                             <ul className="leadership-list">
-                                <li>Co-Founded the Beta Theta Pi Fraternity chapter at UCF.</li>
-                                <li>Advanced organization's web presence through website development and management.</li>
-                                <li>Raised thousands of dollars for charities through philanthropy efforts.</li>
-                            </ul>
-                        </div>
-
-                        <div className="leadership-item">
-                            <div className="leadership-header">
-                                <h4>Web Development Chair</h4>
-                                <span className="leadership-date">Oct 2023 - Current</span>
-                            </div>
-                            <p className="leadership-org">Beta Theta Pi UCF</p>
-                            <ul className="leadership-list">
-                                <li>Led the design and development of the chapter's official website.</li>
-                                <li>Managed web hosting, domain administration, and ongoing site maintenance.</li>
-                                <li>Integrated charitable giving platforms to support philanthropy initiatives.</li>
+                                <li>Served as a Founding Father of the UCF chapter, contributing to the establishment of organizational structure, bylaws, and operational standards from the ground up.</li>
+                                <li>Provided one-on-one and group tutoring to fraternity members in IT and computer science coursework, reinforcing technical fundamentals across networking, programming, and systems concepts.</li>
                             </ul>
                         </div>
                     </div>
@@ -78,31 +78,39 @@ const About = () => {
                         <div className="profile-image-container">
                             <img src={profileImg} alt="Ric Rebull" className="profile-image" />
                         </div>
+                        <a href={resumePdf} download="Ric_Rebull_Resume_2026.pdf" className="download-btn">
+                            <Download size={18} style={{ marginRight: '8px' }} /> Download Resume
+                        </a>
                     </div>
 
                     <div className="skills-section">
                         <h3 className="skills-title">Technical Skills</h3>
 
                         <div className="skill-category">
-                            <h4>SYSTEMS & OPERATIONS</h4>
+                            <h4>SYSTEMS & IT OPERATIONS</h4>
                             <div className="skill-tags">
                                 <span className="skill-tag">Active Directory</span>
+                                <span className="skill-tag">Group Policy (GPO)</span>
                                 <span className="skill-tag">Windows Server/10</span>
-                                <span className="skill-tag">Linux (Configuration)</span>
+                                <span className="skill-tag">RHEL Installation</span>
+                                <span className="skill-tag">Domain Joins</span>
                                 <span className="skill-tag">DNS Configuration</span>
-                                <span className="skill-tag">Group Policy</span>
-                                <span className="skill-tag">Computer Imaging</span>
-                                <span className="skill-tag">System Hardening</span>
+                                <span className="skill-tag">Remote Desktop (RDP)</span>
+                                <span className="skill-tag">Computer Imaging/Deployment</span>
+                                <span className="skill-tag">Python</span>
+                                <span className="skill-tag">AWS Experience</span>
                             </div>
                         </div>
 
                         <div className="skill-category">
-                            <h4>CYBERSECURITY</h4>
+                            <h4>CYBERSECURITY & COMPLIANCE</h4>
                             <div className="skill-tags">
-                                <span className="skill-tag">RMF Standards</span>
-                                <span className="skill-tag">STIG / SCAP</span>
-                                <span className="skill-tag">Purdue Model (OT/ICS)</span>
+                                <span className="skill-tag">RMF Framework</span>
+                                <span className="skill-tag">STIG / SCAP Hardening</span>
+                                <span className="skill-tag">NIST SP 800-53</span>
                                 <span className="skill-tag">Access Controls</span>
+                                <span className="skill-tag">Purdue Model (OT/ICS)</span>
+                                <span className="skill-tag">ISSO/ISSE/ISSM Roles</span>
                             </div>
                         </div>
 
@@ -111,18 +119,20 @@ const About = () => {
                             <div className="skill-tags">
                                 <span className="skill-tag">Python</span>
                                 <span className="skill-tag">PowerShell</span>
+                                <span className="skill-tag">SQL</span>
                                 <span className="skill-tag">Git</span>
+                                <span className="skill-tag">CMD</span>
                                 <span className="skill-tag">Clonezilla</span>
-                                <span className="skill-tag">Wireshark</span>
+                                <span className="skill-tag">VMware</span>
                             </div>
                         </div>
                         <div className="skill-category">
                             <h4>SOFT SKILLS</h4>
                             <div className="skill-tags">
-                                <span className="skill-tag">Technical Writing</span>
-                                <span className="skill-tag">Team Leadership</span>
-                                <span className="skill-tag">Conflict Resolution</span>
-                                <span className="skill-tag">Documentation</span>
+                                <span className="skill-tag">Leadership</span>
+                                <span className="skill-tag">Public Speaking</span>
+                                <span className="skill-tag">Technical Communication</span>
+                                <span className="skill-tag">Cross-Functional Collaboration</span>
                             </div>
                         </div>
                     </div>

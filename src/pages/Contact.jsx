@@ -14,7 +14,7 @@ const Contact = () => {
                 <div className="contact-info">
                     <div className="info-card">
                         <div className="info-icon">
-                            <Mail size={24} color="#00e5ff" />
+                            <Mail size={24} color="var(--accent)" />
                         </div>
                         <div className="info-details">
                             <h3>Email</h3>
@@ -24,11 +24,11 @@ const Contact = () => {
 
                     <div className="info-card">
                         <div className="info-icon">
-                            <MapPin size={24} color="#00e5ff" />
+                            <MapPin size={24} color="var(--accent)" />
                         </div>
                         <div className="info-details">
                             <h3>Location</h3>
-                            <p>Miami, FL / Orlando, FL</p>
+                            <p>Hialeah, FL</p>
                         </div>
                     </div>
 

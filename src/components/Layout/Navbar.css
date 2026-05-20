@@ -2,37 +2,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 16px 50px;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(2, 12, 27, 0.6);
-    /* More transparent */
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
     z-index: 100;
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
+    border-bottom: 1px solid var(--border);
+    transition: var(--transition);
 }
 
 .navbar-logo {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: var(--text-primary);
     display: flex;
     align-items: center;
+    font-family: var(--font-headings);
 }
 
 .logo-symbol {
     color: var(--accent);
-    margin-right: 5px;
-    background-color: rgba(100, 255, 218, 0.1);
-    padding: 2px 6px;
-    border-radius: 4px;
+    margin-right: 8px;
+    background-color: var(--accent-glow);
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-weight: bold;
+    border: 1px solid rgba(194, 65, 12, 0.15);
 }
 
 .logo-divider {
     margin: 0 10px;
-    color: var(--text-secondary);
-    opacity: 0.5;
+    color: var(--border);
+    opacity: 0.8;
 }
 
 .logo-highlight {
@@ -41,47 +46,29 @@
 
 .navbar-links {
     display: flex;
-    gap: 10px;
-    /* Reduced gap to accommodate buttons */
+    gap: 8px;
 }
 
 .navbar-links a {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 500;
     transition: var(--transition);
     padding: 8px 16px;
-    border-radius: 4px;
+    border-radius: 8px;
+    border: 1px solid transparent;
 }
 
 .navbar-links a:hover {
     color: var(--accent);
-    background-color: rgba(100, 255, 218, 0.05);
+    background-color: var(--accent-glow);
 }
 
-/* Active state matching the screenshot: Solid cyan background, dark text */
 .navbar-links a.active {
-    background-color: rgba(2, 62, 74, 0.4);
-    /* Darker cyan/teal background */
+    background-color: var(--accent-glow);
     color: var(--accent);
-    border: 1px solid rgba(100, 255, 218, 0.3);
-}
-
-/* Alternative interpretation of screenshot: The "Projects" button looks like a solid block 
-   Wait, looking closely at "Projects" in the screenshot... 
-   It has a dark background (maybe slightly lighter than nav) and cyan text, 
-   or a cyan background with dark text?
-   
-   Let's look at the screenshot `uploaded_image_0_1763605863020.png`.
-   The "Projects" button has a dark teal/cyan background and cyan text.
-   It looks like `background-color: rgba(0, 229, 255, 0.15)` with `color: #00e5ff`.
-   Let's adjust.
-*/
-
-.navbar-links a.active {
-    background-color: rgba(0, 229, 255, 0.15);
-    color: #00e5ff;
-    border-radius: 4px;
-    font-weight: 500;
+    border: 1px solid rgba(194, 65, 12, 0.1);
+    font-weight: 600;
 }
 
 .mobile-menu-icon {
@@ -92,28 +79,29 @@
 
 @media screen and (max-width: 768px) {
     .navbar {
-        padding: 20px;
+        padding: 16px 24px;
     }
 
     .mobile-menu-icon {
         display: block;
-        z-index: 101; /* Above the menu overlay */
+        z-index: 101;
     }
 
     .navbar-links {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%; /* Or 100% if you want full width */
+        width: 80%;
         height: 100vh;
-        background-color: rgba(2, 12, 27, 0.95);
-        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: 0.3s ease-in-out;
+        transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         z-index: 100;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+        border-left: 1px solid var(--border);
     }
 
     .navbar-links.active {
@@ -121,10 +109,14 @@
     }
 
     .navbar-links li {
-        margin: 15px 0;
+        margin: 12px 0;
+        width: 80%;
+        text-align: center;
     }
 
     .navbar-links a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        display: block;
+        padding: 12px;
     }
 }

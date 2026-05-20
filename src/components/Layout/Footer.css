@@ -1,9 +1,8 @@
 .footer {
     padding: 30px 50px;
     background-color: var(--bg-primary);
-    border-top: 1px solid #1e2d4d;
+    border-top: 1px solid var(--border);
     margin-top: auto;
-    /* Push to bottom if flex container */
 }
 
 .footer-content {
@@ -13,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--text-secondary);
 }
 
@@ -29,7 +28,8 @@
 }
 
 .status-item span {
-    color: #00e5ff;
+    color: var(--accent);
+    font-weight: 500;
 }
 
 @media (max-width: 768px) {

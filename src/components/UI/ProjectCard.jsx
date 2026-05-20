@@ -5,12 +5,12 @@ import './ProjectCard.css';
 const ProjectCard = ({ title, type, tags, description, highlights, iconType, date }) => {
     const getIcon = () => {
         switch (iconType) {
-            case 'network': return <Folder size={40} color="#00e5ff" />;
-            case 'chart': return <BarChart2 size={40} color="#00e5ff" />;
-            case 'bot': return <MessageSquare size={40} color="#00e5ff" />;
-            case 'server': return <Server size={40} color="#00e5ff" />;
-            case 'game': return <Gamepad2 size={40} color="#00e5ff" />;
-            default: return <Folder size={40} color="#00e5ff" />;
+            case 'network': return <Folder size={40} color="var(--accent)" />;
+            case 'chart': return <BarChart2 size={40} color="var(--accent)" />;
+            case 'bot': return <MessageSquare size={40} color="var(--accent)" />;
+            case 'server': return <Server size={40} color="var(--accent)" />;
+            case 'game': return <Gamepad2 size={40} color="var(--accent)" />;
+            default: return <Folder size={40} color="var(--accent)" />;
         }
     };
 

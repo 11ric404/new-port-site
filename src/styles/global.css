@@ -13,13 +13,20 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     cursor: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
     /* Hide default cursor */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+    color: var(--text-primary);
 }
 
 a {
     text-decoration: none;
     color: inherit;
     cursor: none;
+    transition: var(--transition);
     /* Ensure links also don't show default cursor */
 }
 
@@ -29,9 +36,9 @@ ul {
 
 /* Custom Cursor */
 .cursor-dot {
-    width: 20px;
-    height: 20px;
-    background-color: white;
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent);
     border-radius: 50%;
     position: fixed;
     top: 0;
@@ -39,21 +46,21 @@ ul {
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 9999;
-    mix-blend-mode: difference;
-    transition: width 0.2s, height 0.2s, background-color 0.2s;
+    box-shadow: 0 0 10px var(--accent), 0 0 20px rgba(194, 65, 12, 0.3);
+    transition: width 0.15s ease-out, height 0.15s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
 }
 
 /* Page Transitions */
 .page-transition {
-    animation: fadeInUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(15px);
 }
 
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(15px);
     }
 
     to {
@@ -64,7 +71,7 @@ ul {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -72,10 +79,10 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--bg-secondary);
-    border-radius: 5px;
+    background: #cbd5e1;
+    border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--text-secondary);
+    background: var(--accent);
 }

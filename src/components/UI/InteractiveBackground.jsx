@@ -66,7 +66,7 @@ const InteractiveBackground = () => {
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, DOT_RADIUS, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(136, 146, 176, 0.2)'; // --text-secondary with low opacity
+                ctx.fillStyle = 'rgba(194, 65, 12, 0.06)';
                 ctx.fill();
             }
         }
